@@ -1,5 +1,10 @@
 
 		.container {
+			background-image: url('BGM.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+			
+			
 			max-width: 800px;
 			margin: 20px auto;
 			background-color: grey;
