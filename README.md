@@ -1,2 +1,0 @@
-# Grasshoppers
- buddy circle group

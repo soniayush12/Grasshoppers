@@ -1,0 +1,27 @@
+/* styles.css */
+
+/* Style for the bullet points */
+#aims-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#aims-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+#aims-list li::before {
+  content: "";
+  background-image: url("../img/aim_bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 8px;
+}

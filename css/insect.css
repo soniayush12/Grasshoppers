@@ -1,0 +1,12 @@
+#mantis {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-image: url('../img/crawling_mantis.png');
+            background-size: cover;
+            transition: transform 0.05s ease-in-out; /* Faster transition for quicker angle change */
+            left: -100px; /* Initial position from the left edge */
+            bottom: 100px; /* Initial position from the bottom edge */
+            transform: translate(-50%, -50%);
+			z-index:25;
+        }

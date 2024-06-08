@@ -1,67 +1,130 @@
 
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="icon.jpg">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="container.css">
-<link rel="stylesheet" href="bodystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasshoppers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/grasshopper_img.css">
+    <link rel="stylesheet" href="css/timeline.css">
+	<link rel="stylesheet" href="css/aim.css">
+	<link rel="stylesheet" href="css/member_card.css">
+	<link rel="stylesheet" href="css/insect.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="icon" href="img/blink_grasshopper.gif" type="image/png">
 
-<title>Grasshoppers - IIIT Trichy</title>
-
-	<style>
-		.contact-info {
-			margin-top: 20px;
-		}
-		.contact-info p {
-			margin: 10px 0;
-		}
-		
-		footer {
-		        background-color: black;
-				color: white;
-				text-align: center;
-				padding: 30px 0; }
-	</style>
 </head>
 <body>
+    <header>
+        <img src="img/blink_grasshopper.gif" class="header_grasshopper" alt="Grasshopper">
+        <h1>Team Grasshoppers</h1>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#aim">Our Aim</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#team">Team Members</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+		<div class="bgm-controls">
+            <a id="play_bgm"><i class="fa fa-play"></i></a>
+            <a id="pause_bgm" style="display:none;"><i class="fa fa-pause"></i></a>
+        </div>
+    </header>
 
-	<header>
-		<h1>Welcome to Grasshoppers</h1>
-		<div class="header-edit">
-		
-		<p>Your College Buddy Circle</p>
-		
-		<nav>
-			<a href="index.html"><button>Home</button></a><br><br>
-			<a href="members.html"><button>Members</button></a>
-		</nav>
-		
-		</div>
-	</header>
-	
-	<div class="background-image">
-		<div class="container">
-				<h2>About Us</h2>
-				<p>We're the Grasshoppers, a bunch of college buddies from IIIT Trichy. We're all about making memories and enjoying the ride through college life.</p>
+    <main>
+        <section id="intro" class="hidden">
+        </section>
 
-			<div class="contact-info">
-				<h2>Contact Information</h2>
-				<p>Email: soniayush312@gmail.com</p>
-				<p>Phone: 7339889592</p>
-				<p>Address: IIIT Trichy, sethurapatti, trichy, Tamil nadu, 620012 </p>
-			</div>
+        <section id="aim" class="hidden">
+            <h2>Our Aim</h2>
+            <ul id="aims-list"></ul>
+        </section>
 
-			<div class="quote">
-				<h2>Get in Touch</h2>
-				<p></p>
-			</div>
+		<section id="timeline" class="hidden">
+			<p>Founded in 2023, our team has grown from a small group of enthusiasts to a strong, well-organized unit. We have participated in various projects and competitions, always striving for excellence.</p>
+            <div id="timeline-container">
+              <h1>Timeline</h1>
+              <ul class="custom-timeline">
+              </ul>
+            </div>
+		</section>
 
-		</div>
-	</div>
-	<footer>
-	<p> Made with ♥ by Ayush soni</p>
-	<p style="color:grey;">©2023 Grasshoppers <br> All rights are researved.<p>
-	</footer>
-	</body>
-	</html>
+
+        <section id="awards" class="hidden">
+            <h2>Awards</h2>
+            <p>Our team has been recognized for our innovative projects and outstanding performance in various competitions. Here are some of our notable awards:</p>
+            <ul>
+                <li>----------------------- - 2024</li>
+                <li>----------------------- - 2024</li>
+                <li>----------------------- - 2024</li>
+            </ul>
+        </section>
+
+        <section id="achievements" class="hidden">
+            <h2>Achievements</h2>
+            <p>We have achieved numerous milestones in our journey. Some of our key achievements include:</p>
+            <ul>
+                <li>here is Blah blah blah ......................</li>
+                <li>here is Blah blah blah ......................</li>
+                <li>here is Blah blah blah ......................</li>
+            </ul>
+        </section>
+
+        <section id="team" class="hidden">
+            <h2>Team Members</h2>
+            <div id="cards-container"></div>
+        </section>
+
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grasshopper . All rights reserved.</p>
+    </footer>
+
+
+	<audio id="bgm" src="bgm/bgm.mp3" preload="auto" loop></audio>
+	<div id="mantis"></div>
+    <script src="js/script.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="data/timeline_json.js"></script>
+    <script src="js/aim.js"></script>
+    <script src="data/aim_json.js"></script>
+	<script src="js/member_card.js"></script>
+	<script src="data/member_json.js"></script>
+    <script src="js/bgm.js"></script>
+	<script src="js/insect_bgm.js"></script>
+	<script src="data/intro-content.js"></script>
+</body>
+</html>
