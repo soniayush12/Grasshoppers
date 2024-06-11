@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/insect.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="icon" href="img/blink_grasshopper.gif" type="image/png">
+    <link rel="stylesheet" href="css/location_info.css">
 
 </head>
 <body>
@@ -106,6 +107,15 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
+
+            <div class="location-info">
+                <h2>Your current location</h2>
+                <p>Your IP address: <span id="ip-address">Loading...</span></p>
+                <p>Latitude: <span id="latitude">Loading...</span></p>
+                <p>Longitude: <span id="longitude">Loading...</span></p>
+                <p>Magnetic decl.: <span id="magnetic-decl">Loading...</span></p>
+                <p>Local time zone: <span id="time-zone">Loading...</span></p>
+            </div>
         </section>
     </main>
 
@@ -126,5 +136,6 @@
     <script src="js/bgm.js"></script>
 	<script src="js/insect_bgm.js"></script>
 	<script src="data/intro-content.js"></script>
+    <script src="js/location_info.js"></script>
 </body>
 </html>

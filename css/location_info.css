@@ -1,0 +1,12 @@
+        .location-info {
+            padding: 20px;
+            border-radius: 10px;
+            width: auto;
+            margin: 20px auto;
+        }
+        .location-info h2 {
+            margin-top: 0;
+        }
+        .location-info p {
+            margin: 5px 0;
+        }
