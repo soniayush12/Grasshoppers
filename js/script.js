@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Show the first section by default
+// first secton by defalt
     if (sections.length > 0) {
         sections[0].style.display = 'block';
     }
