@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
             var playButton = document.getElementById('play_bgm');
             var pauseButton = document.getElementById('pause_bgm');
             var mantis = document.getElementById('mantis');
-            var mouseX = -200; // Initial position from the left edge
-            var mouseY = window.innerHeight + 200; // Initial position from the bottom edge
+            var mouseX = -200; // Initial position
+            var mouseY = window.innerHeight + 200; // Initial position
             var isPlaying = false;
             var restLeft = -200;
             var restBottom = window.innerHeight + 200;
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             setInterval(function () {
-                var currentX = parseFloat(mantis.style.left) || -200; // Updated initial X position
-                var currentY = parseFloat(mantis.style.top) || window.innerHeight + 200; // Updated initial Y position
+                var currentX = parseFloat(mantis.style.left) || -200; // Updated  X postion
+                var currentY = parseFloat(mantis.style.top) || window.innerHeight + 200; // Updated Y postion
                 var dx = mouseX - currentX;
                 var dy = mouseY - currentY;
                 var distance = Math.sqrt(dx * dx + dy * dy);
